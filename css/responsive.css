@@ -1,0 +1,65 @@
+/* MEDIDA PARA TELEFONOS SMARTPHONE */
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#000;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	#menuprincipal nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	#menuprincipal nav ul li {
+		display: block;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+
+	#menuprincipal nav ul li a {
+		display: block;
+	}
+
+	#menuprincipal nav ul li:hover .children {
+		display: none;
+	}
+
+	#menuprincipal nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	#menuprincipal nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	#menuprincipal nav ul li .caret {
+		float: right;
+	}
+}
