@@ -4,6 +4,18 @@
 	body {
 		padding-top:80px;
 	}
+    
+    #menu_top{
+        display: none;
+    }
+    
+    #titulo{
+        display: none;
+    }
+    
+    #subheader .sociales{
+        display: none;
+    }
 
 	.menu_bar {
 		display:block;
@@ -24,7 +36,7 @@
 	}
 
 	.menu_bar span {
-		float: right;
+		float: left;
 		font-size: 40px;
 	}
 
