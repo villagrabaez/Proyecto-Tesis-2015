@@ -1,14 +1,31 @@
+/* ESTILOS POR DEFECTO */
+
 *{
 	padding: 0px;
 	margin: 0px;
+}
+
+@font-face{
+	font-family: bebas;
+	src:url(fonts/BebasNeue.otf);
+}
+
+@font-face{
+	font-family: bebasRegular;
+	src:url(fonts/BebasNeueRegular.otf);
+}
+
+body{
+	font-family: arial, helvetica, "sans serif";
+	font-size: 16px;
 }
 
 /* CONTENEDOR PRINCIPAL */
 
 #contenedor{
     margin: auto;
-	width: 960px;
     max-width: 960px;
+	width: 960px;
 
 }
 
@@ -21,30 +38,57 @@
 
 #menu_top ul li{
 	display: inline-block;
+	margin-bottom: 3px;
 	list-style: none;
 }
 
 #menu_top ul li a{
+	font-size: 12px;
 	padding-right: 5px;
 	text-align: center;
 	text-decoration: none;
 }
 
+/* CABECERA FACEBOOK */
+
+#cabecera_fb{
+	background: gray;
+	color: #fff;
+	height: 80px;
+	width: 100%;
+}
+
 /* LOGO */
 
-#logo{
-	width: 260px;
-	height: 80px;
-	background: url(imagenes/santani-logo.png);
+#logo img{
 	float: left;
-	margin: 20px;
+	margin: 10px;
+	width: 80px;
+
+}
+
+#titulo{
+	float: left;
+	width: 700px;
+}
+
+#titulo h1{
+	font-family: bebas;
+	font-size: 42px;
+	margin: 12px 0px 0px 5px;
+}
+
+#titulo h2{
+	color: gray;
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: -13px;
 }
 
 /* REDES SOCIALES HEADER */
 
 .sociales{
-	float: right;
-	margin-top: 30px;
+	float: left;
 }
 
 /* BUSCADOR HEADER */
@@ -63,7 +107,6 @@
 	background: #000;
 	z-index:1000;
 	width:100%;
-    position: relative;
 }
 
 #menuprincipal nav ul {
@@ -85,6 +128,7 @@
 	color:#fff;
 	display:block;
 	text-decoration:none;
+	text-transform: uppercase;
 	padding: 15px;
 }
 
@@ -131,13 +175,6 @@
 	margin-right:0px;
 }
 
-#menuprincipal nav #tiendasocios{
-    position: absolute;
-    width: 170px;
-    top: 0;
-    right: 150px;
-}
-
 /* SLIDER */
 
 #slideshow{
@@ -152,15 +189,39 @@
 }
 
 #slideshow .extract{
-height: 250px;
-overflow: hidden;
+
 }
 
 #slideshow article{
-	float:left;
-	text-align:justify;
-	width:33%;
 	color:#fff;
+	float:left;
+	height: 280px;
+	margin-bottom: 25px;
+	overflow: hidden;
+	width:33%;
+}
+
+#slideshow article h2 a{
+	color: #fff;
+	font-size: 35px;
+	font-family: bebasRegular;
+	line-height: 2px;
+	text-decoration: none;
+}
+
+#slideshow .ver_nota{
+	color: #fff;
+	background: red;
+	border: 0;
+	border-radius: 5px;
+	padding: 4px;
+}
+
+#slideshow article .categoria{
+	color: gray;
+	font-size: 12px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
 }
 
 #slideshow .slidesjs-pagination{
