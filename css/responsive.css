@@ -17,21 +17,38 @@
         display: none;
     }
 
+    #cabecera_fb{
+    	display: none;
+    }
+
+    #no-slide{
+    	display: none;
+    }
+
+    aside{
+    	display: none;
+    }
+
+    /* MENU */
+
+    /* BARRA DE MENU FIJO */
+
 	.menu_bar {
+		background:#000;
 		display:block;
-		width:100%;
+		left: 0;
 		position: fixed;
 		top:0;
-		background:#000;
+		width:100%;
 	}
 
 	.menu_bar .bt-menu {
 		display: block;
-		padding: 20px;
 		color: #fff;
-		overflow: hidden;
 		font-size: 25px;
 		font-weight: bold;
+		padding: 20px;
+		overflow: hidden;
 		text-decoration: none;
 	}
 
@@ -40,8 +57,10 @@
 		font-size: 40px;
 	}
 
+	/* LISTAR MENU */
+
 	#menuprincipal nav {
-		width: 80%;
+		width: 70%;
 		height: calc(100% - 80px);
 		position: fixed;
 		right:100%;
@@ -63,15 +82,22 @@
 	}
 
 	#menuprincipal nav ul li .children {
-		width: 100%;
+
 		position: relative;
+		width: 100%;
 	}
 
-	#menuprincipal nav ul li .children li a {
-		margin-left:20px;
+	#menuprincipal nav ul li .children li{
+	
 	}
 
 	#menuprincipal nav ul li .caret {
 		float: right;
+	}
+
+	/* CONTENEDOR DE ARTICULOS */
+
+	#contenido{
+		width: 100%;
 	}
 }

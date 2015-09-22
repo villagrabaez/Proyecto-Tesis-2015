@@ -5,14 +5,21 @@
 	margin: 0px;
 }
 
-@font-face{
-	font-family: bebas;
-	src:url(fonts/BebasNeue.otf);
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/BEBAS___-webfont.eot');
+    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face{
-	font-family: bebasRegular;
-	src:url(fonts/BebasNeueRegular.otf);
+	font-family: 'bebasRegular';
+	src: url('fonts/BebasNeueRegular.ttf');
+	src: url('fonts/BebasNeueRegular.otf');
 }
 
 body{
@@ -73,16 +80,16 @@ body{
 }
 
 #titulo h1{
-	font-family: bebas;
-	font-size: 2.625em;
-	margin: 0.4em 0em 0em 0.3125em;
+	font-family: bebas, arial;
+	font-size: 2.3em;
+	margin: 0.5em 0em 0em 0.3125em;
 }
 
 #titulo h2{
 	color: gray;
 	font-size: 1.125em;
 	font-weight: normal;
-	margin-top: -0.75em;
+	margin-top: -0.1em;
 }
 
 /* REDES SOCIALES HEADER */
@@ -143,8 +150,8 @@ body{
 }
 
 #menuprincipal nav ul li .children {
-	display: none;
 	background:#fff;
+	display: none;
 	position: absolute;
 	width: 150%;
 	z-index:2000;
@@ -204,7 +211,7 @@ body{
 
 #slideshow article h2 a{
 	color: #fff;
-	font-family: bebasRegular;
+	font-family: bebasRegular, arial;
 	font-size: 1.7em;
 	line-height: 0.75em;
 	text-decoration: none;
@@ -412,14 +419,93 @@ aside p{
 footer{
     background: #000;
     float: left;
-    height: 200px;
+    margin: 0 auto;
     width: 100%; 
 }
 
-footer p{
-    color: #fff;
-    text-align: center;
-    padding-top: 90px; 
+footer #m_socialesfooter{
+	display: none;
 }
 
+footer #menu_footer{
+	float: left;
+	margin: 0.625em;
+	width: 30%;
+}
+
+footer #menu_footer .titulo{
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-weight: bold;
+	padding-bottom: 0.625em;
+}
+
+footer #menu_footer nav{
+	margin: 0.3125em 0em 0em 0em;
+}
+
+footer #menu_footer nav ul li{
+	list-style: none;
+	margin-left: 0.3125em;
+}
+
+footer #menu_footer nav ul li span{
+	color: #fff;
+}
+
+footer #menu_footer nav ul li a{
+	color: #fff;
+	padding: 0.3125em;
+	text-decoration: none;
+}
+
+footer #menu_footer nav ul li a:hover{
+	text-decoration: underline;
+}
+
+footer #contacto_footer{
+	color: #fff;
+	float: left;
+	margin: 0.625em;
+	width: 64%;
+}
+
+footer #contacto_footer .titulo_contacto{
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-weight: bold;
+	padding-bottom: 0.625em;
+}
+
+footer #contacto_footer #imagen_footer{
+	float: left;
+	margin: 0em 1.25em 0em 0.625em;
+}
+
+footer #contacto_footer #imagen_footer img{
+	margin: 0.625em 0em 0em 0em;
+	width: 80px;
+}
+
+footer #contacto_footer #datos_footer{
+	margin: 0.6em 0em 0em 0em;
+}
+
+footer #contacto_footer p.ubicacion, footer #contacto_footer p.telefono, footer #contacto_footer p.mail{
+	padding: 0.35em 0em;
+	width: 100%;
+}
+
+footer #copyright{
+	float: left;
+	width: 100%;
+}
+
+footer #copyright p{
+	background: #fff;
+	border-bottom: 10px solid #000;
+	color: #000;
+	padding: 20px 0px;
+	text-align: center;
+}
 
