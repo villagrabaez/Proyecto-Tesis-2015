@@ -22,6 +22,18 @@
 	src: url('fonts/BebasNeueRegular.otf');
 }
 
+@font-face {
+    font-family: 'ambleregular';
+    src: url('Amble-Regular-webfont.eot');
+    src: url('Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-Regular-webfont.woff') format('woff'),
+         url('Amble-Regular-webfont.ttf') format('truetype'),
+         url('Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
 	font-family: arial, helvetica, "sans serif";
 	font-size: 16px; /* fuente padre */
@@ -419,7 +431,6 @@ aside p{
 footer{
     background: #000;
     float: left;
-    margin: 0 auto;
     width: 100%; 
 }
 
@@ -429,23 +440,26 @@ footer #m_socialesfooter{
 
 footer #menu_footer{
 	float: left;
-	margin: 0.625em;
-	width: 30%;
+	padding: 1.3em;
+	width: 25%;
 }
 
-footer #menu_footer .titulo{
-	border-bottom: 2px solid #fff;
+footer #menu_footer .titulo_navegacion{
+	border-bottom: 0.1875em solid #fff;
 	color: #fff;
+	font-family: 'ambleregular', arial;
 	font-weight: bold;
+	font-size: 1.3em;
 	padding-bottom: 0.625em;
 }
 
 footer #menu_footer nav{
-	margin: 0.3125em 0em 0em 0em;
+	margin: 1em 0em 0em 0em;
 }
 
 footer #menu_footer nav ul li{
 	list-style: none;
+	padding: 0.1em;
 	margin-left: 0.3125em;
 }
 
@@ -455,7 +469,8 @@ footer #menu_footer nav ul li span{
 
 footer #menu_footer nav ul li a{
 	color: #fff;
-	padding: 0.3125em;
+	font-family: 'ambleregular', arial;
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -465,15 +480,17 @@ footer #menu_footer nav ul li a:hover{
 
 footer #contacto_footer{
 	color: #fff;
-	float: left;
-	margin: 0.625em;
-	width: 64%;
+	float: right;
+	padding: 1.3em;
+	width: 65%;
 }
 
 footer #contacto_footer .titulo_contacto{
-	border-bottom: 2px solid #fff;
+	border-bottom: 0.1875em  solid #fff;
 	color: #fff;
+	font-family: 'ambleregular', arial;
 	font-weight: bold;
+	font-size: 1.3em;
 	padding-bottom: 0.625em;
 }
 
@@ -483,17 +500,30 @@ footer #contacto_footer #imagen_footer{
 }
 
 footer #contacto_footer #imagen_footer img{
-	margin: 0.625em 0em 0em 0em;
+	margin: 1.7em 0em 0em 0em;
 	width: 80px;
 }
 
 footer #contacto_footer #datos_footer{
-	margin: 0.6em 0em 0em 0em;
+	margin: 1.5em 0em 0em 0em;
 }
 
-footer #contacto_footer p.ubicacion, footer #contacto_footer p.telefono, footer #contacto_footer p.mail{
+footer #contacto_footer p{
+	font-size: 0.9em;
+}
+
+footer #contacto_footer p.ubicacion, p.telefono, p.mail{
 	padding: 0.35em 0em;
 	width: 100%;
+}
+
+footer #contacto_footer p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer #contacto_footer p a:hover{
+	text-decoration: underline;
 }
 
 footer #copyright{
