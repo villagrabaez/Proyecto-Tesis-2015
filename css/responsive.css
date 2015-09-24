@@ -29,6 +29,26 @@
     	display: none;
     }
 
+    #productos{
+    	display: none;
+    }
+
+    #ti_galeria{
+    	display: none;
+    }
+
+    #galeria{
+    	display: none;
+    }
+
+    footer #menu_footer{
+    	display: none;
+    }
+
+    footer #contacto_footer{
+    	display: none;
+    }
+
     /* MENU */
 
     /* BARRA DE MENU FIJO */
@@ -95,9 +115,90 @@
 		float: right;
 	}
 
+	/* PATROCINADORES */
+
+	#patrocinadores .d_patrocinadores{
+		display: none;
+	}
+
 	/* CONTENEDOR DE ARTICULOS */
 
 	#contenido{
+		margin: 10px 0px;
 		width: 100%;
+	}
+
+	#contenido article{
+		background: #F7F9FC;
+		margin: 5px 0px 5px 0px;
+		padding: 5px 5px 5px 5px;
+		width: 95.5%;
+	}
+
+	#contenido article p.date{
+		font-size: 0.9em;
+	}
+
+	#contenido article h2 a{
+		font-family: 'OpenSansSemiBold', arial;
+		font-size: 1.4em;
+	}
+
+	#contenido .titulo_item{
+		font-family: 'OpenSansSemiBold', arial;
+		font-size: 1.2em;
+		margin-top: 10px;
+	}
+
+	#contenido .titulo_item a{
+		color: red;
+	}
+
+	#contenido article p.extract{
+		color: #414141;
+		font-size: 1em;
+	}
+
+	/* SOCIALES */
+
+	footer #m_socialesfooter{
+		background: #F7F9FC;
+		display: block;
+	}
+
+	footer #m_socialesfooter p{
+		text-align: center;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	footer #m_socialesfooter p:first-child{
+		border-bottom: 1px solid #000;
+		font-family: 'OpenSansBold', arial;
+		font-size: 1em;
+		font-weight: bold;
+		padding: 8px;
+	}
+
+	footer #m_socialesfooter p.seguinos{
+		font-family: 'OpenSansSemiBold', arial;
+		font-size: 0.9em;
+		padding: 8px;
+	}
+
+	footer #m_socialesfooter .m_sociales{
+		padding: 15px;
+		text-align: center;
+	}
+
+	footer #m_socialesfooter .m_sociales a{
+		color: #000;
+		font-size: 2em;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	footer #m_socialesfooter .m_sociales a:hover{
+		color: blue;
 	}
 }

@@ -22,16 +22,14 @@
 	src: url('fonts/BebasNeueRegular.otf');
 }
 
-@font-face {
-    font-family: 'ambleregular';
-    src: url('Amble-Regular-webfont.eot');
-    src: url('Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Amble-Regular-webfont.woff') format('woff'),
-         url('Amble-Regular-webfont.ttf') format('truetype'),
-         url('Amble-Regular-webfont.svg#ambleregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@font-face{
+	font-family: 'OpenSansBold';
+	src:ulr('fonts/OpenSansBold.ttf');
+}
 
+@font-face{
+	font-family: 'OpenSansSemiBold';
+	src: url('fonts/OpenSansSemiBold.ttf');
 }
 
 body{
@@ -72,8 +70,7 @@ body{
 /* CABECERA FACEBOOK */
 
 #cabecera_fb img{
-	background: gray;
-	height: 80px;
+	margin-top: 5px;
 	width: 100%;
 }
 
@@ -109,6 +106,14 @@ body{
 .sociales{
 	float: right;
 	margin: 0.8em 1.25em 0em 0em;
+}
+
+.sociales img{
+	width: 30px;
+}
+
+.sociales img:hover{
+	box-shadow: 0px 2px white;
 }
 
 /* BUSCADOR HEADER */
@@ -223,7 +228,7 @@ body{
 
 #slideshow article h2 a{
 	color: #fff;
-	font-family: bebasRegular, arial;
+	font-family: 'bebasRegular', arial;
 	font-size: 1.7em;
 	line-height: 0.75em;
 	text-decoration: none;
@@ -288,16 +293,13 @@ body{
 /* PROMOCIONES */
 
 #promociones{
-    background: gray;
     float: left;
-    height: 100px;
     width: 99%;
 }
 
-#promociones p{
+#promociones img{
     color: #fff;
-    text-align: center;
-    padding-top: 45px;
+    width: 100%;
 }
 
 /* ARTICULOS */
@@ -366,17 +368,13 @@ body{
 }
 
 #productos .wid_productos{
-    background: green;
-    height: 200px;
     float: left;
     margin: 0em 0.28125em 0em 0em;
     width: 48.9%;
 }
 
-#productos .wid_productos p{
-    color: #fff;
-    text-align: center;
-    padding-top: 85px;
+#productos .wid_productos img{
+	width: 100%;
 }
 
 /* GALERIA */
@@ -414,16 +412,19 @@ aside p{
 /* PATROCINADORES */
 
 #patrocinadores{
-    background: gray;
+    background: #fff;
     float: left;
-    height: 150px;
     width: 100%;
 }
 
-#patrocinadores p{
+#patrocinadores .d_patrocinadores{
     color: #fff;
-    padding-top: 60px;
-    text-align: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+#patrocinadores .m_patrocinadores{
+	display: none;
 }
 
 /* FOOTER */
@@ -447,7 +448,7 @@ footer #menu_footer{
 footer #menu_footer .titulo_navegacion{
 	border-bottom: 0.1875em solid #fff;
 	color: #fff;
-	font-family: 'ambleregular', arial;
+	font-family: 'OpenSansSemiBold', arial;
 	font-weight: bold;
 	font-size: 1.3em;
 	padding-bottom: 0.625em;
@@ -469,7 +470,7 @@ footer #menu_footer nav ul li span{
 
 footer #menu_footer nav ul li a{
 	color: #fff;
-	font-family: 'ambleregular', arial;
+	font-family: 'OpenSansSemiBold', arial;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -488,7 +489,7 @@ footer #contacto_footer{
 footer #contacto_footer .titulo_contacto{
 	border-bottom: 0.1875em  solid #fff;
 	color: #fff;
-	font-family: 'ambleregular', arial;
+	font-family: 'OpenSansSemiBold', arial;
 	font-weight: bold;
 	font-size: 1.3em;
 	padding-bottom: 0.625em;
